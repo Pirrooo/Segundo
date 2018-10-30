@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Ansley Display";
+    src: url("Ansley Display/Ansley Display-Black.ttf") format("truetype");
+}
+body{
+    margin: 0px;
+    text-align: center;
+
+    /*  #presen{
+          padding: 10px 30px 10px 30px;
+          background-color:   #1e88e5 ;
+          background-image: url("img/horizonte.jpg");
+          background-position: 0px -150px;
+          border-bottom: 1px solid white;
+          position:relative;
+      }*/
+    .example-container{
+        background-image: url("img/horizonte.jpg");
+        background-position: 0px -150px;
+    }
+    img{
+        width: 80px;
+        height: 80px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border-radius: 50%;
+        background-size: 100% auto;
+    }
+    h1{
+        padding-left: 20px;
+        display: inline;
+        font-family: "Ansley Display" !important;
+        /*color: #4db6ac !important;*/
+        color: #17a2b8 !important;
+        font-size: 3vw;
+
+    }
+    #boton{
+        position:absolute;
+        top:16;
+        right:30;
+    }
+
+    //cuerpo
+    #cuerpo{
+        text-align: center;
+        background-image: url("img/blanco.jpg");
+
+        #texto{
+            background-color: white;
+            width: 850px;
+            text-align: justify;
+            margin: 40px 0px 40px 0px;
+            padding: 30px 150px 30px 150px;
+            display: inline-block;
+            -webkit-box-shadow: 5px 5px 30px 10px #999;
+            box-shadow: 5px 5px 30px 10px #999
+        }
+    }
+}
