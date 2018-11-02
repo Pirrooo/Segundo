@@ -1,0 +1,3 @@
+https://xprimiendo.com/busqueda-de-texto-en-javascript/ -> Muestra como implementar un buscador de palabras
+https://01luisrene.com/pop-ups-o-ventanas-emergentes-javascript/ -> abrir ventanas-emergentes-
+https://datoweb.com/post/2299-ventana-flotante-animada-con-javascript-y-jquery -Div flotante
