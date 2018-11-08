@@ -85,6 +85,10 @@ body {
       position: absolute;
       top: 16;
       right: 30; }
+    body .example-container #Cerrar {
+      position: absolute;
+      top: 16;
+      right: 30; }
   body #search {
     width: 180px; }
   body #cuerpo {
@@ -99,3 +103,8 @@ body {
       display: inline-block;
       -webkit-box-shadow: 5px 5px 30px 10px #999;
       box-shadow: 5px 5px 30px 10px #999; }
+    body #cuerpo #social {
+      display: inline;
+      position: relative;
+      top: -800px;
+      left: -70px; }
