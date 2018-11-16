@@ -1,0 +1,25 @@
+//cuerpo
+@font-face {
+    font-family: "Bauhaus";
+    src: url("Bauhaus/BauhausRegular.ttf") format("truetype");
+}
+#cuerpo{
+    text-align: center;
+    background-image: url("img/blanco.jpg");
+
+    @import "redes.scss";
+
+    #texto{
+        background-color: white;
+        width: 850px;
+        text-align: justify;
+        margin: 40px 0px 40px 0px;
+        padding: 30px 150px 30px 150px;
+        display: inline-block;
+        -webkit-box-shadow: 5px 5px 30px 10px #999;
+        box-shadow: 5px 5px 30px 10px #999;
+    }
+
+    @import "personal.scss";
+
+}

@@ -1,27 +1,63 @@
 $(document).ready(function(e) {
-//    var respuesta = "no";
+    var respuesta = "no";
     var dato = {"dato": "primero"};
     $.ajax({
         type: "POST",
         url: "/Muestrario/PHP/login.php",
         data: dato,
         success: function(data) {
-            // $('#resp').html(data);
-            var respuesta = data;
+            $('#resp').html(data);
+            respuesta = data;
             if (respuesta == "misesion") {
                 $('li').show();
                 $('#Acceder').hide();
                 $('#Cerrar').show();
+                $('#mia').show();
             }
             if (respuesta == "otrasesion") {
                 $('#Pruebas').show();
                 $('#Acceder').hide();
                 $('#Cerrar').show();
+                $('#otra').show();
             }
         }
     });
-
-
+    $("#texto-Personal").mouseover(function() {
+        $('#pdf').show();
+    });
+    $("#texto-Personal").mouseout(function() {
+        $('#pdf').hide();
+    });
+//abrir sesion
+    $("#enviar").click(function() {
+        if (document.form.contra.value == '123456' && document.form.usuario.value == 'ismael') {
+            document.form.submit();
+        } else if (document.form.contra.value == '456789' && document.form.usuario.value == 'otro') {
+            document.form.submit();
+        } else {
+            alert('Porfavor ingrese, nombre de usuario y contraseña correctos.');
+        }
+    });
+    //cerrar sesion
+    $("#Cerrar").click(function() {
+        var confirmar = confirm("¿Desea cerrar la sesión?");
+        if (confirmar) {
+            /*    $('#Personal').hide();
+             $('#Pruebas').hide();
+             $('#Cerrar').hide();
+             $('#Acceder').show();*/
+            var dato = {"dato": "cerrar"};
+            $.ajax({
+                type: "POST",
+                url: "/Muestrario/PHP/login.php",
+                data: dato,
+                success: function(data) {
+                    $('#resp').html(data);
+                    window.location.href = "/Muestrario/index.php";
+                }
+            });
+        }
+    });
 
 
     //pulsar acceder
@@ -58,50 +94,4 @@ $(document).ready(function(e) {
         $('#flotante').addClass('animated flipInY');
         $('#login').show();
     });
-    //abrir sesion
-    $("#enviar").click(function() {
-        if (document.form.contra.value == '123456' && document.form.usuario.value == 'ismael') {
-            document.form.submit();
-            /*var dato = {"dato": "primero"};
-             $.ajax({
-             type: "POST",
-             url: "/Muestrario/PHP/login.php",
-             data: dato,
-             success: function(data) {
-             $('#login').hide();
-             if (data == "correcto") {
-             $('li').show();
-             $('#Acceder').hide();
-             $('#Cerrar').show();
-             }
-             $('#resp').html(data);
-             }
-             });*/
-        } else if (document.form.contra.value == '456789' && document.form.usuario.value == 'otro') {
-            document.form.submit();
-        } else {
-            alert('Porfavor ingrese, nombre de usuario y contraseña correctos.');
-        }
-    });
-    //cerrar sesion
-    $("#Cerrar").click(function() {
-        var confirmar = confirm("¿Desea cerrar la sesión?");
-        if (confirmar) {
-            $('#Personal').hide();
-            $('#Pruebas').hide();
-            $('#Cerrar').hide();
-            $('#Acceder').show();
-            var dato = {"dato": "cerrar"};
-            $.ajax({
-                type: "POST",
-                url: "/Muestrario/PHP/login.php",
-                data: dato,
-                success: function(data) {
-                    //  $('#resp').html(data);
-                    window.location.href = "/Muestrario/index.php";
-                }
-            });
-        }
-    }
-    );
 });

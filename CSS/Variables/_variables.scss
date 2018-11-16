@@ -1,0 +1,91 @@
+$col-flot:#FDF5E6;
+%flotante{
+    width: 400px;
+    height: 400px;
+    color:black;
+    background-image: url("img/piedra1.jpg");
+    background-color: $col-flot;
+    background-size: contain;
+    position: absolute;
+    top:  200px;
+    left: 500px;
+    right: 500px;
+    z-index: 1023;
+    position: fixed;
+    box-shadow: 0 2px 10px rgba(0,0,0,.15);
+    border-radius: 6px 6px 6px 6px;
+    text-align: center;
+    h2{
+        margin-top: 30px;
+    }
+    h4{
+        margin-top: 15px;
+        margin-left: 16px;
+        margin-bottom: 0;
+        float:left;
+    }
+    .cerrar{
+        opacity: 0.5;
+        background-color: transparent;
+        border: none;
+        float:right;
+        position: relative;
+        font-size: 30;
+        right: 6px;
+    }
+    .btn{
+        margin-top: 15px;
+    }
+    #registrar, #loguear{
+        background-color: transparent;
+        opacity: 0.5;
+        border: none;
+        float:left;
+    }
+    .cerrar:hover, #registrar:hover, #loguear:hover{
+        cursor:pointer;
+        cursor: hand;
+        opacity: 1.0;
+    }
+}
+
+//cuerpo-CV
+$col-azul-cv:#05899d;
+%flecha {
+    width: 80px;
+    height: 20px;
+    position: relative;
+    background: $col-azul-cv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+%flecha:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid white;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+%flecha:before {
+    content: "";
+    position: absolute;
+    right: -10px;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border-left: 10px solid $col-azul-cv;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+}
+%circle {
+    width: 10px;
+    height: 10px;
+    background: black;
+    border-radius: 50%
+}

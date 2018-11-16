@@ -12,20 +12,13 @@
         <script src="JS/buscador.js"></script><script src="JS/logueador.js"></script>
         <script>
 
-            /* $(document).ready(function(e) {
-             var comp = "<?php echo $comp; ?>";
-             if (comp == "yo") {
-             $('li').show();
-             $('#Acceder').hide();
-             $('#Cerrar').show();
-             }
-             });*/
+
 
         </script>
 
     </head>
     <body>
-        <!--  <div id="resp">fg</div>-->
+        <!--<div id="resp">fg</div>-->
         <div id="login" style="display:none">
             <div id="flotante">
                 <button class="cerrar" type="button">x</button>
@@ -68,6 +61,8 @@
                     <h1 class="info">Ismael</h1>
                 </div>
                 <div class= "example-content-secondary">
+                    <h3 class='usuario' id='mia' style="display: none">Mi sesi&oacute;n</h3>
+                    <h3 class='usuario' id='otra' style="display: none">Otra</h3>
                     <button id="Acceder" type="button" class="btn btn-outline-info">Acceder</button>
                     <!--<a href="PHP/login.php" class="btn btn-outline-info" id="Cerrar" style="display:none">Cerrar</a>-->
                     <button id="Cerrar" type="button" class="btn btn-outline-info" style="display: none">Cerrar</button>
@@ -86,13 +81,13 @@
                             <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Muestras</a>
+                            <a class="nav-link" href="PHP/Muestras.php">Muestras</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Articulos</a>
+                            <a class="nav-link" href="PHP/Articulos.php">Articulos</a>
                         </li>
                         <li class="nav-item" id="Personal" style="display: none">
-                            <a class="nav-link" href="#">Personal</a>
+                            <a class="nav-link" href="PHP/Personal.php">Personal</a>
                         </li>
                         <li class="nav-item" id="Pruebas" style="display: none">
                             <a class="nav-link" href="PHP/pruebas.php">Pruebas</a>
@@ -106,7 +101,14 @@
 
         <!-- </div>-->
         <div id="cuerpo">
-            <div id="social">AQUI</div>
+            <div id="social">
+                <table cellpadding="0" cellspacing="0">
+                    <tr><td><img class="redes" id="facebook" src="CSS/img/facebook.png"/></td></tr>
+                    <tr><td><img class="redes" id="linkedin" src="CSS/img/linkedin.png"/></td></tr>
+                    <tr><td><img class="redes" id="twitter" src="CSS/img/twitter.png"/></td></tr>
+
+                </table>
+            </div>
             <div id="texto">
                 <span id="results"></span>
                 <h3>Primero</h3>

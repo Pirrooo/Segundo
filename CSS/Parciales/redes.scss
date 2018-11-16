@@ -1,0 +1,22 @@
+#social{
+    display: inline;
+    position:fixed;
+    top:280px;
+    left:70px;
+    z-index: 1020;
+    .redes{
+        width: 55px;
+        height: 55px;
+        opacity: 0.8;
+        border-radius: 3px;
+        cursor: hand;
+        cursor:pointer;
+    }
+    .redes:hover{
+        width: 57px;
+        height: 57px;
+        opacity: 1.0;
+        -webkit-box-shadow: 4px 4px 20px 7px #999;
+        box-shadow: 4px 4px 20px 7px #999;
+    }
+}

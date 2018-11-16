@@ -1,0 +1,169 @@
+
+
+@media print{
+    #texto-Personal {
+        background-color: white;
+        width: 750px;
+        text-align: justify;
+        margin: 40px 0px 40px 0px;
+        display: inline-block;
+        -webkit-box-shadow: 5px 5px 30px 10px #999;
+        box-shadow: 5px 5px 30px 10px #999; }
+    #presentacion {
+        width: 280px;
+        height: 350px;
+        text-align: center;
+        background-color: #05899d;
+        color: white;}
+    #nombre{
+        margin-top: 8px;
+        font-size: 36px;}
+    #foto {
+        margin-top: 25px;
+        width: 200px;
+        height: 200px;
+        background-repeat: no-repeat;
+        background-position: 50%;
+        border-radius: 50%;
+        background-size: 100% auto; }
+    #contacto {
+        color: #05899d;
+        background-color: white;
+        width: 465px;
+        height: 350px; }
+    #contacto .col {
+        margin-left: 40px;
+        margin-right: 20px;
+        height: 80px;
+        font-size: 16px;
+        padding-left: 2;
+        padding-right: 0; }
+    /*CLASE img*/
+    .img {
+        width: 20px;
+        height: 20px;
+        position: relative;
+        top: 43px;
+        left: -20px;
+        display: flex; }
+    .tit {
+        position: relative;
+        top: -45px;
+        margin-left: 10px;
+        margin-bottom: 0; }
+    .resp{
+        position: relative;
+        top: -10px;
+        margin-left: 10px;}
+
+    #importante {
+        position: relative;
+        top: -70px;
+        width: 465px;
+        height: 700px;
+        color: #05899d;
+        margin-left: 15px;}
+    #importante img {
+        width: 30px;
+        height: 30px;
+        margin-right: 10px;
+        margin-top: 20px;}
+    #importante hr {
+        margin-top: 5px;
+        height: 0px;
+        color: #05899d; }
+    .col{
+        margin-right: 30px;
+    }
+    #importante p {
+        margin-top: 0;
+        margin-left: 83px;
+        margin-bottom: 8px;
+        color: black; }
+    .caja{
+        font-weight: bold;
+        font-size: 15px;
+        position: relative;
+        top: -40px;
+        margin-left: 40px;
+        margin-bottom: 0;
+        color: #05899d;
+    }
+    .cargo {
+        color: #05899d;
+        font-weight: bold;
+        position: relative;
+        top: -17px;}
+    .lugar{
+        margin-bottom: 0;}
+
+
+    #complementario {
+        position: relative;
+        top: -5px;
+        background-color: #05899d;
+        color: white;
+        width: 280px;
+        height: 700px;}
+    .continfo {
+        width: 230px;
+        margin-left: 23px;
+        margin-top: 25px;}
+    .titulos {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: inline-block;
+        font-size: 14px;}
+    .continfo hr {
+        margin-top: 0;
+        margin-bottom: 10px;
+        color: white;
+        height: 1px;
+        border: 0;}
+    .cuestion{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .contestacion {
+        margin-top: 0;
+        margin-bottom: 0;
+        position: relative;
+        top: -15px;
+        margin-left: 130px;
+        font-size: 12px;}
+
+    .flecha {
+        width: 60px;
+        height: 17px;
+        position: relative;
+        top: 10px;
+        background: #05899d;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white; }
+    .after {
+        content: "";
+        position: relative;
+        top: -17px;
+        width: 0;
+        height: 0;
+        background-color: #05899d;
+        border-left: 12px solid white;
+        border-top: 8px solid transparent;
+        border-bottom: 8px solid transparent; }
+    .before {
+        content: "";
+        position: relative;
+        top: -17px;
+        margin-left: 59px;
+        width: 0;
+        height: 0;
+        border-left: 10px solid #05899d;
+        border-top: 9px solid transparent;
+        border-bottom: 9px solid transparent; }
+}
